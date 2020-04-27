@@ -1,0 +1,10 @@
+<div class="form-container">
+    <h1>contactanos</h1>
+    <form [formGroup]="contactForm" (ngSubmit)="onSaveForm()">
+      <input type="text" formControlName="name" placeholder="your name">
+      <input type="text" formControlName="email" placeholder="your email">
+      <textarea formControlName="message" placeholder="type your message"></textarea>
+      <button type="submit" class="btn-send">Enviar</button>
+    </form>
+</div>
+ 
